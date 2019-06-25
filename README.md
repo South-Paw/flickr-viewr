@@ -2,6 +2,8 @@
 
 📷 React application for viewing and searching the Flickr Public Feed via their JSON API
 
+[![Live Demo](https://img.shields.io/badge/netlify-live_demo-1e9498.svg)](https://priceless-galileo-148404.netlify.com/)
+
 ---
 
 ## Development
