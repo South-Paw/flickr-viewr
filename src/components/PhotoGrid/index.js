@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import Photo from './Photo';
 
-import { GridWrapper, Grid, SkeletonItem } from './styled';
+import { NoResults, GridWrapper, Grid, SkeletonItem } from './styled';
 
 const PhotoGrid = ({ isLoading, data }) => {
   if (isLoading) {
@@ -25,7 +25,7 @@ const PhotoGrid = ({ isLoading, data }) => {
   const { items = [] } = data;
 
   if (!items || !items.length) {
-    return <>no results</>;
+    return <NoResults>No results found 😵</NoResults>;
   }
 
   const { title, description } = data;

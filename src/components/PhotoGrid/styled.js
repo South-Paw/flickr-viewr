@@ -10,6 +10,16 @@ const skeletonShine = keyframes`
   }
 `;
 
+export const NoResults = styled.div`
+  margin: 2rem; 0;
+  height: 6rem;
+  display: flex;
+  flex-flow: nowrap row;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+`;
+
 export const GridWrapper = styled.div`
   margin: 2rem 0;
 
