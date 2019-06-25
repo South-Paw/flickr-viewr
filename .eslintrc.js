@@ -10,6 +10,8 @@ module.exports = {
 
     'import/prefer-default-export': 'off',
 
+    'jsx-a11y/accessible-emoji': 'off',
+
     'react/jsx-filename-extension': [1, { extensions: ['.js'] }],
     'react/jsx-one-expression-per-line': 'off',
   },

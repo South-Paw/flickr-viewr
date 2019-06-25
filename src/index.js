@@ -1,4 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-ReactDOM.render(<div>hello world</div>, document.getElementById('root'));
+import Theme from './components/Theme';
+
+import Router from './Router';
+
+ReactDOM.render(
+  <Theme>
+    <Router />
+  </Theme>,
+  document.getElementById('root'),
+);

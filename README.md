@@ -30,14 +30,14 @@ npm run lint
 
 ## Requirements
 
-- [ ] UI to search the ["Public Feed"](https://www.flickr.com/services/feeds/docs/photos_public/) Flickr [JSON API](https://www.flickr.com/services/api/response.json.html) and view images.
-- [ ] Apply basic styling to make it presentable
+- [x] UI to search the ["Public Feed"](https://www.flickr.com/services/feeds/docs/photos_public/) Flickr [JSONP API](https://www.flickr.com/services/api/response.json.html) and view images.
+- [x] Apply basic styling to make it presentable
 - [ ] Unit tests
-- [ ] Real-time/instant results as the user types
-- [ ] Image as thumbnail
-- [ ] Image author
-- [ ] Image tags
-- [ ] Link the thumbnail to the hi-res image so the user can view that too
+- [x] Real-time/instant results as the user types
+- [x] Image as thumbnail
+- [x] Image author
+- [x] Image tags
+- [x] Link the thumbnail to the hi-res image so the user can view that too
 
 Assume that the app and the data set will grow over time, so the initial architecture needs to take this into account.
 
