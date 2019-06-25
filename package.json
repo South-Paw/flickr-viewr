@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "React application for viewing and searching the Flickr Public Feed via their JSON API",
   "keywords": [],
-  "homepage": "https://github.com/South-Paw/flickr-viewr",
+  "homepage": ".",
   "bugs": "",
   "license": "MIT",
   "author": {
