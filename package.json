@@ -1,0 +1,61 @@
+{
+  "name": "@south-paw/flickr-viewr",
+  "version": "1.0.0",
+  "description": "React application for viewing and searching the Flickr Public Feed via their JSON API",
+  "keywords": [],
+  "homepage": "https://github.com/South-Paw/flickr-viewr",
+  "bugs": "",
+  "license": "MIT",
+  "author": {
+    "name": "Alex Gabites",
+    "email": "hello@southpaw.co.nz",
+    "url": "http://southpaw.co.nz/"
+  },
+  "files": [],
+  "main": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/South-Paw/flickr-viewr"
+  },
+  "scripts": {
+    "develop": "yarn start",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "format": "prettier --write **/*.js",
+    "lint": "eslint .",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-scripts": "3.0.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.2",
+    "eslint": "^6.0.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^5.0.0",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.14.2",
+    "prettier": "^1.18.2"
+  },
+  "private": true,
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
