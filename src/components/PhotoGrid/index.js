@@ -13,16 +13,14 @@ const PhotoGrid = ({ isLoading, data }) => {
       <GridWrapper>
         <Grid>
           {Object.keys(arr).map(key => (
-            <>
-              <SkeletonItem key={`skeleton_${key}`} />
-            </>
+            <SkeletonItem key={`skeleton_${key}`} />
           ))}
         </Grid>
       </GridWrapper>
     );
   }
 
-  const { items = [] } = data;
+  const { items } = data;
 
   if (!items || !items.length) {
     return <NoResults>No results found 😵</NoResults>;

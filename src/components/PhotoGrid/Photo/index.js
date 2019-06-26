@@ -18,7 +18,7 @@ const Photo = ({ title, link, media: { m }, author, author_id: authorId, tags })
       {tags && (
         <Tags>
           {tags.split(' ').map(tag => (
-            <span>{tag}</span>
+            <span key={tag}>{tag}</span>
           ))}
         </Tags>
       )}
