@@ -57,7 +57,7 @@ class Home extends Component {
       jsonpCallbackFunction: 'jsonFlickrFeed',
     })
       .then(res => res.json())
-      .then(json => setTimeout(() => this.setState({ isLoading: false, hasError: false, data: json }), 2000))
+      .then(json => this.setState({ isLoading: false, hasError: false, data: json }))
       .catch(error => this.setState({ isLoading: false, hasError: true, error: error.message }));
   };
 
