@@ -8,7 +8,7 @@ import ErrorMessage from '../../components/ErrorMessage';
 import { Container, Header, Input, Helper } from './styled';
 
 // Turns a string of text into valid tag argument for the Flickr API request.
-const formatFlickrTags = str => {
+export const formatFlickrTags = str => {
   if (!str) {
     return str;
   }
