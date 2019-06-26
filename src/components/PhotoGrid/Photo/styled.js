@@ -11,7 +11,7 @@ const skeletonShine = keyframes`
   }
 `;
 
-export const Details = styled.div`
+const Details = styled.div`
   padding: 0.5rem;
   position: absolute;
   bottom: 0;
@@ -23,8 +23,9 @@ export const Details = styled.div`
   transition: opacity ease-out 0.3s;
   user-select: none;
 `;
+Details.displayName = 'Details';
 
-export const Item = styled.a`
+const Item = styled.a`
   margin: 0.5rem;
   flex: 1 1 20%;
   overflow: hidden;
@@ -56,16 +57,18 @@ export const Item = styled.a`
     }
   }
 `;
+Item.displayName = 'Item';
 
-export const Image = styled.div`
+const Image = styled.div`
   width: 100%;
   height: 12rem;
   background: url('${p => p.src}');
   background-size: cover;
   background-position: center;
 `;
+Image.displayName = 'Image';
 
-export const Name = styled.div`
+const Name = styled.div`
   width: 100%;
   height: 1rem;
   overflow: hidden;
@@ -74,8 +77,9 @@ export const Name = styled.div`
   text-shadow: ${p => p.theme.colors.black} 0 0 2px;
   white-space: pre;
 `;
+Name.displayName = 'Name';
 
-export const Author = styled.div`
+const Author = styled.div`
   width: 100%;
   height: 1rem;
   overflow: hidden;
@@ -90,8 +94,9 @@ export const Author = styled.div`
     font-weight: bold;
   }
 `;
+Author.displayName = 'Author';
 
-export const Tags = styled.div`
+const Tags = styled.div`
   margin-top: 0.25rem;
   overflow: hidden;
   font-size: 0.7rem;
@@ -107,3 +112,6 @@ export const Tags = styled.div`
     }
   }
 `;
+Tags.displayName = 'Tags';
+
+export { Details, Item, Image, Name, Author, Tags };

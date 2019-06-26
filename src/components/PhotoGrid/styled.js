@@ -11,7 +11,7 @@ const skeletonShine = keyframes`
   }
 `;
 
-export const NoResults = styled.div`
+const NoResults = styled.div`
   margin: 2rem; 0;
   height: 6rem;
   display: flex;
@@ -20,21 +20,24 @@ export const NoResults = styled.div`
   justify-content: center;
   font-weight: 500;
 `;
+NoResults.displayName = 'NoResults';
 
-export const GridWrapper = styled.div`
+const GridWrapper = styled.div`
   margin: 2rem 0;
 
   h1 {
     margin-bottom: 1rem;
   }
 `;
+GridWrapper.displayName = 'GridWrapper';
 
-export const Grid = styled.div`
+const Grid = styled.div`
   display: flex;
   flex-flow: wrap row;
 `;
+Grid.displayName = 'Grid';
 
-export const SkeletonItem = styled.div`
+const SkeletonItem = styled.div`
   margin: 0.5rem;
   flex: 1 1 20%;
   height: 12rem;
@@ -55,3 +58,6 @@ export const SkeletonItem = styled.div`
     flex-basis: 100%;
   }
 `;
+SkeletonItem.displayName = 'SkeletonItem';
+
+export { NoResults, GridWrapper, Grid, SkeletonItem };

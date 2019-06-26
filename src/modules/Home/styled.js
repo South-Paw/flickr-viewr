@@ -1,14 +1,15 @@
 import styled from 'styled-components';
 import { rgba } from 'polished';
 
-export const Container = styled.div`
+const Container = styled.div`
   margin: 0 auto;
   padding: 0 1rem;
   width: 100%;
   max-width: 1200px;
 `;
+Container.displayName = 'Container';
 
-export const Header = styled.div`
+const Header = styled.div`
   background-color: ${p => p.theme.colors.dark};
 
   & > * {
@@ -23,8 +24,9 @@ export const Header = styled.div`
     }
   }
 `;
+Header.displayName = 'Header';
 
-export const Input = styled.input`
+const Input = styled.input`
   padding: 1rem;
   width: 80%;
   height: 3rem;
@@ -50,11 +52,15 @@ export const Input = styled.input`
     box-shadow: ${p => rgba(p.theme.colors.green, 0.38)} 0 0 0 4px;
   }
 `;
+Input.displayName = 'Input';
 
-export const Helper = styled.div`
+const Helper = styled.div`
   margin-top: 1rem;
   color: ${p => rgba(p.theme.colors.white, 0.83)};
   font-size: 0.8rem;
   font-weight: 300;
   letter-spacing: 1px;
 `;
+Helper.displayName = 'Helper';
+
+export { Container, Header, Input, Helper };
