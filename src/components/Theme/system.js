@@ -1,5 +1,7 @@
 /* eslint-disable prefer-destructuring */
 
+// only used for colors in this project, but if extended would be based on https://system-ui.com/theme
+
 const colors = {
   black: '#000000',
   darker: '#111111',

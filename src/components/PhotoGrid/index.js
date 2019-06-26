@@ -6,6 +6,7 @@ import Photo from './Photo';
 import { NoResults, GridWrapper, Grid, SkeletonItem } from './styled';
 
 const PhotoGrid = ({ isLoading, data }) => {
+  // If we're loading, show a skeleton UI of at least 8 items.
   if (isLoading) {
     const arr = new Array(8).fill();
 
@@ -22,6 +23,7 @@ const PhotoGrid = ({ isLoading, data }) => {
 
   const { items } = data;
 
+  // If we didn't fetch any items or there's no results.
   if (!items || !items.length) {
     return <NoResults>No results found 😵</NoResults>;
   }
@@ -35,6 +37,7 @@ const PhotoGrid = ({ isLoading, data }) => {
       <Grid>
         {items.map((item, idx) => (
           // eslint-disable-next-line
+          // `idx * idx` just guarantees us a unique number for each key.
           <Photo key={`${idx * idx}__${item.author_id}`} {...item} />
         ))}
       </Grid>
