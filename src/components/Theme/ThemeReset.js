@@ -48,7 +48,7 @@ const ThemeReset = createGlobalStyle`
   }
 
   body {
-    color: #222;
+    color: ${p => p.theme.colors.dark};
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
     font-size: 16px;
     font-style: normal;

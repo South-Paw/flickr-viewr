@@ -1,4 +1,5 @@
 import styled, { keyframes } from 'styled-components';
+import { rgba } from 'polished';
 
 const skeletonShine = keyframes`
   0% {
@@ -17,8 +18,8 @@ export const Details = styled.div`
   left: 0;
   right: 0;
   opacity: 0;
-  background-image: linear-gradient(transparent, #111);
-  color: white;
+  background-image: linear-gradient(transparent, ${p => p.theme.colors.darker});
+  color: ${p => p.theme.colors.white};
   transition: opacity ease-out 0.3s;
   user-select: none;
 `;
@@ -28,12 +29,16 @@ export const Item = styled.a`
   flex: 1 1 20%;
   overflow: hidden;
   position: relative;
-  text-shadow: #000 1px;
+  text-shadow: ${p => p.theme.colors.black} 1px;
   transition: box-shadow ease-out 0.3s;
-
-  background-image: linear-gradient(90deg, #f4f4f4 0px, rgba(229, 229, 229, 0.8) 40px, #f4f4f4 80px);
+  background-image: linear-gradient(
+    90deg,
+    ${p => p.theme.colors.offwhite} 0px,
+    ${p => rgba(p.theme.colors.lightgray, 0.8)} 40px,
+    ${p => p.theme.colors.offwhite} 80px
+  );
   background-size: 600px;
-  animation: ${skeletonShine} 3s infinite ease-out;
+  animation: ${skeletonShine} 2s infinite ease-out;
 
   @media (max-width: 900px) {
     flex-basis: 33%;
@@ -44,7 +49,7 @@ export const Item = styled.a`
   }
 
   &:hover {
-    box-shadow: rgba(0, 0, 0, 0.3) 0 0 4px 2px;
+    box-shadow: ${p => rgba(p.theme.colors.black, 0.3)} 0 0 4px 2px;
 
     ${Details} {
       opacity: 1;
@@ -66,7 +71,7 @@ export const Name = styled.div`
   overflow: hidden;
   font-size: 0.8rem;
   text-overflow: ellipsis;
-  text-shadow: #000 0 0 2px;
+  text-shadow: ${p => p.theme.colors.black} 0 0 2px;
   white-space: pre;
 `;
 
@@ -78,7 +83,7 @@ export const Author = styled.div`
   font-size: 0.8rem;
   text-decoration: none;
   text-overflow: ellipsis;
-  text-shadow: #000 0 0 2px;
+  text-shadow: ${p => p.theme.colors.black} 0 0 2px;
   white-space: pre;
 
   span {
@@ -91,7 +96,7 @@ export const Tags = styled.div`
   overflow: hidden;
   font-size: 0.7rem;
   text-overflow: ellipsis;
-  text-shadow: #000 0 0 2px;
+  text-shadow: ${p => p.theme.colors.black} 0 0 2px;
   white-space: pre;
 
   span {

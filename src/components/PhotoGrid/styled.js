@@ -1,4 +1,5 @@
 import styled, { keyframes } from 'styled-components';
+import { rgba } from 'polished';
 
 const skeletonShine = keyframes`
   0% {
@@ -37,10 +38,14 @@ export const SkeletonItem = styled.div`
   margin: 0.5rem;
   flex: 1 1 20%;
   height: 12rem;
-
-  background-image: linear-gradient(90deg, #f4f4f4 0px, rgba(229, 229, 229, 0.8) 40px, #f4f4f4 80px);
+  background-image: linear-gradient(
+    90deg,
+    ${p => p.theme.colors.offwhite} 0px,
+    ${p => rgba(p.theme.colors.lightgray, 0.8)} 40px,
+    ${p => p.theme.colors.offwhite} 80px
+  );
   background-size: 600px;
-  animation: ${skeletonShine} 3s infinite ease-out;
+  animation: ${skeletonShine} 2s infinite ease-out;
 
   @media (max-width: 900px) {
     flex-basis: 33%;

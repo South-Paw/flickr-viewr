@@ -1,11 +1,12 @@
 import styled from 'styled-components';
+import { rgba } from 'polished';
 
 export const ErrorWrapper = styled.div`
   margin-top: 2rem;
   padding: 1rem;
-  background-color: #bb1d1d;
+  background-color: ${p => p.theme.colors.red};
   border-radius: 8px;
-  color: #fff;
+  color: ${p => p.theme.colors.white};
 `;
 
 export const Title = styled.div`
@@ -25,12 +26,12 @@ export const Actions = styled.div`
 export const ErrorAction = styled.button`
   padding: 0.25rem 0.5rem;
   background: none;
-  border: 2px solid #fff;
+  border: 2px solid ${p => p.theme.colors.white};
   border-radius: 4px;
-  color: #fff;
+  color: ${p => p.theme.colors.white};
   font-weight: 500;
 
   &:focus {
-    box-shadow: rgba(255, 255, 255, 0.4) 0 0 0 3px;
+    box-shadow: ${p => rgba(p.theme.colors.white, 0.4)} 0 0 0 3px;
   }
 `;
