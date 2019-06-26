@@ -34,7 +34,7 @@ npm run lint
 
 - [x] UI to search the ["Public Feed"](https://www.flickr.com/services/feeds/docs/photos_public/) Flickr [JSONP API](https://www.flickr.com/services/api/response.json.html) and view images.
 - [x] Apply basic styling to make it presentable
-- [ ] Unit tests
+- [x] Unit tests
 - [x] Real-time/instant results as the user types
 - [x] Image as thumbnail
 - [x] Image author
