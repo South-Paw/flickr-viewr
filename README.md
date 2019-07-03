@@ -8,26 +8,26 @@
 
 ## Development
 
-Install [`Node.js`](https://nodejs.org/), open command line in the project folder and then use any of the following commands
+Install [`Node.js`](https://nodejs.org/) and [`Yarn`](https://yarnpkg.com), open command line in the project folder and then use any of the following commands
 
 ```bash
 # install dependencies
-npm i
+yarn
 
 # serve for local dev
-npm run start
+yarn start
 
 # build for production
-npm run build
+yarn build
 
 # test project
-npm run test
+yarn test
 
 # format project source
-npm run format
+yarn format
 
 # lint project
-npm run lint
+yarn lint
 ```
 
 ## Requirements
@@ -43,7 +43,7 @@ npm run lint
 
 Assume that the app and the data set will grow over time, so the initial architecture needs to take this into account.
 
-Need to be able to run: `npm install` / `npm start` in the root of the project and have the app run locally (In the latest Chrome/Firefox, don't worry about supporting older browsers).
+Need to be able to run: `yarn` / `yarn start` in the root of the project and have the app run locally (In the latest Chrome/Firefox, don't worry about supporting older browsers).
 
 ## License
 
